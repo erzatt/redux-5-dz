@@ -3,3 +3,22 @@
     width: 100%;
     height: 100%;
   }
+
+.width {
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ display: flex;
+ width: 1400px;
+ gap: 40px;
+}
+
+
+.product-image {
+  width: 340px;
+  height: 140px;
+  background: #b41d3e;
+}
+.li {
+  margin-left: 120px;
+}

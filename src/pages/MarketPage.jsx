@@ -26,20 +26,21 @@ const MarketPage = () => {
 
   return (
     <div className="width">
-        <h1>Market place:</h1>
         {product.map((item) => (
             <div key={item.id} className="product-block">
                 <img src={item.thumbnail} alt="техника" className="product-image" />
                 <h2>{item.title}</h2>
                 <span>{item.description}</span>
                 <p>{item.price}$</p>
-                <p>rating: {item.rating}</p>
-                <p>brand: {item.brand}</p>
-                <p>category: {item.category}</p>
+                <p>stars: {item.rating}</p>
+                <p>model: {item.brand}</p>
+                <p>quality: {item.category}</p>
                 <button onClick={() => handleSubmit(item)}>BUY</button>
             </div>
         ))}
     </div>
+
+    
   )
 }
 

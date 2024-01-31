@@ -31,11 +31,9 @@ body {
   transition: 2.5s;
 }
 
-body:hover {
-    background: url("https://www.pixground.com/wp-content/uploads/2023/07/Abstract-Dark-Red-Layers-AI-Generated-4K-Wallpaper-jpg.webp");
-    background-position: center;
 
-}
+
+
 @keyframes gradientAnimation {
   0% {
     background-position: 0% 0%;
@@ -92,17 +90,21 @@ nav {
   align-items: center;
   position: fixed;
   top: 0;
-  border-bottom: 2px solid darkred;
+  border-bottom: 2px solid gray;
 }
 
 ul {
   list-style-type: none;
+  display: flex;
+  gap: 30px;
+  padding-left: 400px;
 }
 
 .logo {
-  width: 150px;
+  width: 100px;
   height: 100px;
-  margin-right: 150px;
+  margin-right: 400px;
+
 }
 
 .logo:hover {
@@ -116,35 +118,33 @@ ul {
 }
 
 .navbar-link:hover {
-  color: #d4d4d4;
+  color: #073c15;
   transition: 0.3s;
 }
 
 .navbar-link:focus {
-  color: #b41d3e;
+  color: #00ff37;
 }
 
 /* Fetch request items */
 
 .product-block {
-  background: black;
+  background: rgb(64, 64, 64);
   color: #ffffff;
-  max-width: 500px;
-  height: auto;
+  width: 300px;
   border-radius: 20px;
   border: 5px solid black;
   overflow: hidden;
   text-align: center;
-  margin: 60px auto;
   font-family: "Ubuntu", sans-serif;
-
-
-
+  font-size: x-small;
+  margin-top: 100px;
 }
 
 p {
   color: #ffffff;
     font-family: Ubuntu, sans-serif;
+    font-size: x-small;
 }
 
 button {
@@ -156,7 +156,7 @@ button {
 }
 
 button:hover {
-  background: darkred;
+  background: darkgreen;
   color: #fff;
     transition: 0.5s;
 }
